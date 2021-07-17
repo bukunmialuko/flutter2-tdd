@@ -5,7 +5,7 @@ abstract class Failure extends Equatable {
   List<Object> get props => [];
 }
 
-// FAILURE TYPES
+// FAILURE TYPES, MAPS TO EXCEPTIONS
 
 class ServerFailure extends Failure {}
 
