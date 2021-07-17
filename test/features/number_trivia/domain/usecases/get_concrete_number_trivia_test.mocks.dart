@@ -4,7 +4,7 @@
 
 import 'dart:async' as _i4;
 
-import 'package:either_dart/src/either.dart' as _i2;
+import 'package:dartz/dartz.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:tdd/core/error/failure.dart' as _i5;
 import 'package:tdd/features/number_trivia/domain/entities/numbar_trivia.dart'
@@ -19,7 +19,10 @@ import 'package:tdd/features/number_trivia/domain/repositories/number_trivia_rep
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: unnecessary_parenthesis
 
-class _FakeEither<L, R> extends _i1.Fake implements _i2.Either<L, R> {}
+class _FakeEither<L, R> extends _i1.Fake implements _i2.Either<L, R> {
+  @override
+  String toString() => super.toString();
+}
 
 /// A class which mocks [NumberTriviaRepository].
 ///

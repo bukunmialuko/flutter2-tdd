@@ -35,8 +35,9 @@ dependencies:
   # Value equality
   equatable: ^2.0.3
   # Functional programming thingies
-#  dartz: ^0.10.0-nullsafety.1
-  either_dart: ^0.1.2
+  dartz: ^0.10.0-nullsafety.1
+
+#  either_dart: ^0.1.2
 
   # Remote API
   data_connection_checker: ^0.3.4

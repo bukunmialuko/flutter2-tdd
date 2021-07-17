@@ -1,4 +1,5 @@
-import 'package:either_dart/either.dart';
+// import 'package:either_dart/either.dart';
+import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
@@ -26,7 +27,8 @@ void main() {
       // act
       final result = await usecase(Params(number: tNumber));
       // assert
-      // expect(result, Right(tNumberTrivia));
+      // expect(result, Right<Failure, NumberTrivia>(tNumberTrivia));
+      expect(result, Right(tNumberTrivia));
       verify(mockNumberTriviaRepository.getConcreteNumberTrivia(tNumber));
       verifyNoMoreInteractions(mockNumberTriviaRepository);
     },
