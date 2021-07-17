@@ -1,4 +1,3 @@
-// import 'package:either_dart/either.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:tdd/core/error/failure.dart';
