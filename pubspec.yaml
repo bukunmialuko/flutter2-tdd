@@ -35,7 +35,9 @@ dependencies:
   # Value equality
   equatable: ^2.0.3
   # Functional programming thingies
-  dartz: ^0.10.0-nullsafety.1
+#  dartz: ^0.10.0-nullsafety.1
+  either_dart: ^0.1.2
+
   # Remote API
   data_connection_checker: ^0.3.4
   http: ^0.13.3
@@ -47,7 +49,7 @@ dev_dependencies:
     sdk: flutter
 
   mockito: ^5.0.11
-
+  build_runner: ^2.0.6
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
